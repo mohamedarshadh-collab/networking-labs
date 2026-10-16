@@ -7,7 +7,7 @@ Create VLAN 10 (Sales) and VLAN 20 (IT) across two switches and
 enable communication between them using router-on-a-stick.
 
 ## Topology
-![Topology](topology.png)
+![Topology](topology.png.png)
 
 ## IP Addressing
 | Device | VLAN | IP | Gateway |
@@ -26,14 +26,14 @@ enable communication between them using router-on-a-stick.
 ## Verification
 
 ### VLANs and trunk ports (Switch0)
-![VLAN and trunk](vlan-trunk.png)
+![VLAN and trunk](vlan-trunk.png.png)
 
 ### Router subinterfaces
-![Router subinterfaces](router-subinterfaces.png)
+![Router subinterfaces](router-subinterfaces.png.png)
 
 ### Ping tests from PC0
 Same VLAN (192.168.10.3) and inter-VLAN (192.168.20.2). The first inter-VLAN
 request times out because of ARP resolution, the rest succeed. TTL=127 shows
 the packets were routed through the router.
 
-![Ping test](ping-test.png)
+![Ping test](ping-test.png.png)
