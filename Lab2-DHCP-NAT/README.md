@@ -7,7 +7,7 @@ Configure Router0 as a DHCP server for the office LAN and enable PAT
 (NAT overload) so internal PCs can reach an external server through an ISP router.
 
 ## Topology
-![Topology](topology2.png)
+![Topology](topology2.png.png)
 
 ## IP Addressing
 | Link | Network | Addresses |
@@ -25,20 +25,20 @@ Configure Router0 as a DHCP server for the office LAN and enable PAT
 ## Verification
 
 ### DHCP bindings and NAT configuration
-![Router0 config](router0-dhcp-nat.png)
+![Router0 config](router0-dhcp-nat.png.png)
 
 ### Before NAT
 PC0 gets 192.168.1.10 from DHCP, but ping to the server (198.51.100.10) fails.
 The ISP router has no route back to the private network.
 
-![Before NAT](before-nat.png)
+![Before NAT](before-nat.png.png)
 
 ### After NAT
 The same ping succeeds (TTL=126, routed through two routers).
 
-![After NAT](after-nat.png)
+![After NAT](after-nat.png.png)
 
 ### NAT translations
 PC0 (192.168.1.10) is translated to 203.0.113.1.
 
-![NAT translations](nat-translations.png)
+![NAT translations](nat-translations.png.png)
